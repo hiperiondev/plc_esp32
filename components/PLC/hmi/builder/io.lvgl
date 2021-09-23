@@ -1,0 +1,2359 @@
+{
+    "fonts": [
+    ],
+    "images": [
+    ],
+    "lvgl": {
+        "name": "page_io",
+        "resolution": {
+            "height": 240,
+            "width": 320
+        },
+        "screen color": "#ffffff",
+        "widgets": [
+            {
+                "checkable": false,
+                "class": "lv_btn",
+                "click": true,
+                "drag": false,
+                "fit": "None",
+                "geometry": {
+                    "height": 25,
+                    "width": 25,
+                    "x": 12,
+                    "y": 70
+                },
+                "hidden": false,
+                "layout": "Center",
+                "locked": false,
+                "name": "button_1",
+                "set event": [
+                ],
+                "state": "Released",
+                "style": "Custome Style",
+                "styles": [
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 0
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 1
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 2
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 3
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 4
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 5
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 6
+                    }
+                ],
+                "widget": "Button"
+            },
+            {
+                "checkable": false,
+                "class": "lv_btn",
+                "click": true,
+                "drag": false,
+                "fit": "None",
+                "geometry": {
+                    "height": 25,
+                    "width": 25,
+                    "x": 53,
+                    "y": 70
+                },
+                "hidden": false,
+                "layout": "Center",
+                "locked": false,
+                "name": "button_2",
+                "set event": [
+                ],
+                "state": "Released",
+                "style": "Custome Style",
+                "styles": [
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 0
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 1
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 2
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 3
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 4
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 5
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 6
+                    }
+                ],
+                "widget": "Button"
+            },
+            {
+                "checkable": false,
+                "class": "lv_btn",
+                "click": true,
+                "drag": false,
+                "fit": "None",
+                "geometry": {
+                    "height": 25,
+                    "width": 25,
+                    "x": 91,
+                    "y": 70
+                },
+                "hidden": false,
+                "layout": "Center",
+                "locked": false,
+                "name": "button_3",
+                "set event": [
+                ],
+                "state": "Released",
+                "style": "Custome Style",
+                "styles": [
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 0
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 1
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 2
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 3
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 4
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 5
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 6
+                    }
+                ],
+                "widget": "Button"
+            },
+            {
+                "checkable": false,
+                "class": "lv_btn",
+                "click": true,
+                "drag": false,
+                "fit": "None",
+                "geometry": {
+                    "height": 25,
+                    "width": 25,
+                    "x": 129,
+                    "y": 70
+                },
+                "hidden": false,
+                "layout": "Center",
+                "locked": false,
+                "name": "button_4",
+                "set event": [
+                ],
+                "state": "Released",
+                "style": "Custome Style",
+                "styles": [
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 0
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 1
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 2
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 3
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 4
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 5
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 6
+                    }
+                ],
+                "widget": "Button"
+            },
+            {
+                "checkable": false,
+                "class": "lv_btn",
+                "click": true,
+                "drag": false,
+                "fit": "None",
+                "geometry": {
+                    "height": 25,
+                    "width": 25,
+                    "x": 169,
+                    "y": 70
+                },
+                "hidden": false,
+                "layout": "Center",
+                "locked": false,
+                "name": "button_5",
+                "set event": [
+                ],
+                "state": "Released",
+                "style": "Custome Style",
+                "styles": [
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 0
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 1
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 2
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 3
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 4
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 5
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 6
+                    }
+                ],
+                "widget": "Button"
+            },
+            {
+                "checkable": false,
+                "class": "lv_btn",
+                "click": true,
+                "drag": false,
+                "fit": "None",
+                "geometry": {
+                    "height": 25,
+                    "width": 25,
+                    "x": 208,
+                    "y": 70
+                },
+                "hidden": false,
+                "layout": "Center",
+                "locked": false,
+                "name": "button_6",
+                "set event": [
+                ],
+                "state": "Released",
+                "style": "Custome Style",
+                "styles": [
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 0
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 1
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 2
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 3
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 4
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 5
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 6
+                    }
+                ],
+                "widget": "Button"
+            },
+            {
+                "checkable": false,
+                "class": "lv_btn",
+                "click": true,
+                "drag": false,
+                "fit": "None",
+                "geometry": {
+                    "height": 25,
+                    "width": 25,
+                    "x": 246,
+                    "y": 70
+                },
+                "hidden": false,
+                "layout": "Center",
+                "locked": false,
+                "name": "button_7",
+                "set event": [
+                ],
+                "state": "Released",
+                "style": "Custome Style",
+                "styles": [
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 0
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 1
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 2
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 3
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 4
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 5
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 6
+                    }
+                ],
+                "widget": "Button"
+            },
+            {
+                "checkable": false,
+                "class": "lv_btn",
+                "click": true,
+                "drag": false,
+                "fit": "None",
+                "geometry": {
+                    "height": 25,
+                    "width": 25,
+                    "x": 283,
+                    "y": 70
+                },
+                "hidden": false,
+                "layout": "Center",
+                "locked": false,
+                "name": "button_8",
+                "set event": [
+                ],
+                "state": "Released",
+                "style": "Custome Style",
+                "styles": [
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 0
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 1
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 2
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 3
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 4
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 5
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 6
+                    }
+                ],
+                "widget": "Button"
+            },
+            {
+                "checkable": false,
+                "class": "lv_btn",
+                "click": true,
+                "drag": false,
+                "fit": "None",
+                "geometry": {
+                    "height": 25,
+                    "width": 25,
+                    "x": 53,
+                    "y": 162
+                },
+                "hidden": false,
+                "layout": "Center",
+                "locked": false,
+                "name": "button_9",
+                "set event": [
+                ],
+                "state": "Released",
+                "style": "Custome Style",
+                "styles": [
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 0
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 1
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 2
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 3
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 4
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 5
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 6
+                    }
+                ],
+                "widget": "Button"
+            },
+            {
+                "checkable": false,
+                "class": "lv_btn",
+                "click": true,
+                "drag": false,
+                "fit": "None",
+                "geometry": {
+                    "height": 25,
+                    "width": 25,
+                    "x": 91,
+                    "y": 162
+                },
+                "hidden": false,
+                "layout": "Center",
+                "locked": false,
+                "name": "button_10",
+                "set event": [
+                ],
+                "state": "Released",
+                "style": "Custome Style",
+                "styles": [
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 0
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 1
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 2
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 3
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 4
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 5
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 6
+                    }
+                ],
+                "widget": "Button"
+            },
+            {
+                "checkable": false,
+                "class": "lv_btn",
+                "click": true,
+                "drag": false,
+                "fit": "None",
+                "geometry": {
+                    "height": 25,
+                    "width": 25,
+                    "x": 129,
+                    "y": 162
+                },
+                "hidden": false,
+                "layout": "Center",
+                "locked": false,
+                "name": "button_11",
+                "set event": [
+                ],
+                "state": "Released",
+                "style": "Custome Style",
+                "styles": [
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 0
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 1
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 2
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 3
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 4
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 5
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 6
+                    }
+                ],
+                "widget": "Button"
+            },
+            {
+                "checkable": false,
+                "class": "lv_btn",
+                "click": true,
+                "drag": false,
+                "fit": "None",
+                "geometry": {
+                    "height": 25,
+                    "width": 25,
+                    "x": 169,
+                    "y": 162
+                },
+                "hidden": false,
+                "layout": "Center",
+                "locked": false,
+                "name": "button_12",
+                "set event": [
+                ],
+                "state": "Released",
+                "style": "Custome Style",
+                "styles": [
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 0
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 1
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 2
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 3
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 4
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 5
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 6
+                    }
+                ],
+                "widget": "Button"
+            },
+            {
+                "checkable": false,
+                "class": "lv_btn",
+                "click": true,
+                "drag": false,
+                "fit": "None",
+                "geometry": {
+                    "height": 25,
+                    "width": 25,
+                    "x": 208,
+                    "y": 162
+                },
+                "hidden": false,
+                "layout": "Center",
+                "locked": false,
+                "name": "button_13",
+                "set event": [
+                ],
+                "state": "Released",
+                "style": "Custome Style",
+                "styles": [
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 0
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 1
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 2
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 3
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 4
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 5
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 6
+                    }
+                ],
+                "widget": "Button"
+            },
+            {
+                "checkable": false,
+                "class": "lv_btn",
+                "click": true,
+                "drag": false,
+                "fit": "None",
+                "geometry": {
+                    "height": 25,
+                    "width": 25,
+                    "x": 246,
+                    "y": 162
+                },
+                "hidden": false,
+                "layout": "Center",
+                "locked": false,
+                "name": "button_14",
+                "set event": [
+                ],
+                "state": "Released",
+                "style": "Custome Style",
+                "styles": [
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 0
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 1
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 2
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 3
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 4
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 5
+                    },
+                    {
+                        "Value": {
+                            "value_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 6
+                    }
+                ],
+                "widget": "Button"
+            },
+            {
+                "align": "Center",
+                "class": "lv_label",
+                "click": false,
+                "drag": false,
+                "geometry": {
+                    "height": 19,
+                    "width": 13,
+                    "x": 18,
+                    "y": 98
+                },
+                "hidden": false,
+                "locked": false,
+                "long mode": "Expand",
+                "name": "label_1",
+                "recolor": false,
+                "set event": [
+                ],
+                "styles": [
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 0
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 1
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 2
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 3
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 4
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 5
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 6
+                    }
+                ],
+                "text": "I0",
+                "widget": "Label"
+            },
+            {
+                "align": "Center",
+                "class": "lv_label",
+                "click": false,
+                "drag": false,
+                "geometry": {
+                    "height": 38,
+                    "width": 17,
+                    "x": 59,
+                    "y": 98
+                },
+                "hidden": false,
+                "locked": false,
+                "long mode": "Expand",
+                "name": "label_2",
+                "recolor": false,
+                "set event": [
+                ],
+                "styles": [
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 0
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 1
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 2
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 3
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 4
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 5
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 6
+                    }
+                ],
+                "text": "I1\n",
+                "widget": "Label"
+            },
+            {
+                "align": "Center",
+                "class": "lv_label",
+                "click": false,
+                "drag": false,
+                "geometry": {
+                    "height": 19,
+                    "width": 13,
+                    "x": 97,
+                    "y": 98
+                },
+                "hidden": false,
+                "locked": false,
+                "long mode": "Expand",
+                "name": "label_3",
+                "recolor": false,
+                "set event": [
+                ],
+                "styles": [
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 0
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 1
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 2
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 3
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 4
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 5
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 6
+                    }
+                ],
+                "text": "I2",
+                "widget": "Label"
+            },
+            {
+                "align": "Center",
+                "class": "lv_label",
+                "click": false,
+                "drag": false,
+                "geometry": {
+                    "height": 19,
+                    "width": 13,
+                    "x": 135,
+                    "y": 98
+                },
+                "hidden": false,
+                "locked": false,
+                "long mode": "Expand",
+                "name": "label_4",
+                "recolor": false,
+                "set event": [
+                ],
+                "styles": [
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 0
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 1
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 2
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 3
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 4
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 5
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 6
+                    }
+                ],
+                "text": "I3",
+                "widget": "Label"
+            },
+            {
+                "align": "Center",
+                "class": "lv_label",
+                "click": false,
+                "drag": false,
+                "geometry": {
+                    "height": 19,
+                    "width": 13,
+                    "x": 174,
+                    "y": 98
+                },
+                "hidden": false,
+                "locked": false,
+                "long mode": "Expand",
+                "name": "label_5",
+                "recolor": false,
+                "set event": [
+                ],
+                "styles": [
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 0
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 1
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 2
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 3
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 4
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 5
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 6
+                    }
+                ],
+                "text": "I4",
+                "widget": "Label"
+            },
+            {
+                "align": "Center",
+                "class": "lv_label",
+                "click": false,
+                "drag": false,
+                "geometry": {
+                    "height": 19,
+                    "width": 13,
+                    "x": 214,
+                    "y": 98
+                },
+                "hidden": false,
+                "locked": false,
+                "long mode": "Expand",
+                "name": "label_6",
+                "recolor": false,
+                "set event": [
+                ],
+                "styles": [
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 0
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 1
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 2
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 3
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 4
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 5
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 6
+                    }
+                ],
+                "text": "I5",
+                "widget": "Label"
+            },
+            {
+                "align": "Center",
+                "class": "lv_label",
+                "click": false,
+                "drag": false,
+                "geometry": {
+                    "height": 19,
+                    "width": 13,
+                    "x": 251,
+                    "y": 98
+                },
+                "hidden": false,
+                "locked": false,
+                "long mode": "Expand",
+                "name": "label_7",
+                "recolor": false,
+                "set event": [
+                ],
+                "styles": [
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 0
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 1
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 2
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 3
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 4
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 5
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 6
+                    }
+                ],
+                "text": "I6",
+                "widget": "Label"
+            },
+            {
+                "align": "Center",
+                "class": "lv_label",
+                "click": false,
+                "drag": false,
+                "geometry": {
+                    "height": 19,
+                    "width": 13,
+                    "x": 288,
+                    "y": 98
+                },
+                "hidden": false,
+                "locked": false,
+                "long mode": "Expand",
+                "name": "label_8",
+                "recolor": false,
+                "set event": [
+                ],
+                "styles": [
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 0
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 1
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 2
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 3
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 4
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 5
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 6
+                    }
+                ],
+                "text": "I7",
+                "widget": "Label"
+            },
+            {
+                "align": "Center",
+                "class": "lv_label",
+                "click": false,
+                "drag": false,
+                "geometry": {
+                    "height": 19,
+                    "width": 20,
+                    "x": 55,
+                    "y": 190
+                },
+                "hidden": false,
+                "locked": false,
+                "long mode": "Expand",
+                "name": "label_9",
+                "recolor": false,
+                "set event": [
+                ],
+                "styles": [
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 0
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 1
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 2
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 3
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 4
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 5
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 6
+                    }
+                ],
+                "text": "Q0",
+                "widget": "Label"
+            },
+            {
+                "align": "Center",
+                "class": "lv_label",
+                "click": false,
+                "drag": false,
+                "geometry": {
+                    "height": 19,
+                    "width": 20,
+                    "x": 93,
+                    "y": 190
+                },
+                "hidden": false,
+                "locked": false,
+                "long mode": "Expand",
+                "name": "label_10",
+                "recolor": false,
+                "set event": [
+                ],
+                "styles": [
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 0
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 1
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 2
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 3
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 4
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 5
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 6
+                    }
+                ],
+                "text": "Q1",
+                "widget": "Label"
+            },
+            {
+                "align": "Center",
+                "class": "lv_label",
+                "click": false,
+                "drag": false,
+                "geometry": {
+                    "height": 19,
+                    "width": 20,
+                    "x": 131,
+                    "y": 190
+                },
+                "hidden": false,
+                "locked": false,
+                "long mode": "Expand",
+                "name": "label_11",
+                "recolor": false,
+                "set event": [
+                ],
+                "styles": [
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 0
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 1
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 2
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 3
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 4
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 5
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 6
+                    }
+                ],
+                "text": "Q2",
+                "widget": "Label"
+            },
+            {
+                "align": "Center",
+                "class": "lv_label",
+                "click": false,
+                "drag": false,
+                "geometry": {
+                    "height": 19,
+                    "width": 20,
+                    "x": 171,
+                    "y": 190
+                },
+                "hidden": false,
+                "locked": false,
+                "long mode": "Expand",
+                "name": "label_12",
+                "recolor": false,
+                "set event": [
+                ],
+                "styles": [
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 0
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 1
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 2
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 3
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 4
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 5
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 6
+                    }
+                ],
+                "text": "Q3",
+                "widget": "Label"
+            },
+            {
+                "align": "Center",
+                "class": "lv_label",
+                "click": false,
+                "drag": false,
+                "geometry": {
+                    "height": 19,
+                    "width": 20,
+                    "x": 210,
+                    "y": 190
+                },
+                "hidden": false,
+                "locked": false,
+                "long mode": "Expand",
+                "name": "label_13",
+                "recolor": false,
+                "set event": [
+                ],
+                "styles": [
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 0
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 1
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 2
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 3
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 4
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 5
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 6
+                    }
+                ],
+                "text": "Q4",
+                "widget": "Label"
+            },
+            {
+                "align": "Center",
+                "class": "lv_label",
+                "click": false,
+                "drag": false,
+                "geometry": {
+                    "height": 19,
+                    "width": 20,
+                    "x": 248,
+                    "y": 190
+                },
+                "hidden": false,
+                "locked": false,
+                "long mode": "Expand",
+                "name": "label_14",
+                "recolor": false,
+                "set event": [
+                ],
+                "styles": [
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 0
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 1
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 2
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 3
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 4
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 5
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 6
+                    }
+                ],
+                "text": "Q5",
+                "widget": "Label"
+            },
+            {
+                "class": "lv_textarea",
+                "click": true,
+                "cursor blink time": 0,
+                "cursor position": 23,
+                "drag": false,
+                "edge flash": false,
+                "geometry": {
+                    "height": 55,
+                    "width": 237,
+                    "x": 7,
+                    "y": 5
+                },
+                "hidden": false,
+                "locked": false,
+                "max length": 0,
+                "name": "text_area_1",
+                "one line mode": false,
+                "password mode": false,
+                "placeholder": "",
+                "scroll propagation": false,
+                "scrollbars": "Drag",
+                "set event": [
+                ],
+                "styles": [
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 0
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 1
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 2
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 3
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 4
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 5
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 6
+                    },
+                    {
+                        "part": 1,
+                        "state": 0
+                    },
+                    {
+                        "part": 1,
+                        "state": 1
+                    },
+                    {
+                        "part": 1,
+                        "state": 2
+                    },
+                    {
+                        "part": 1,
+                        "state": 3
+                    },
+                    {
+                        "part": 1,
+                        "state": 4
+                    },
+                    {
+                        "part": 1,
+                        "state": 5
+                    },
+                    {
+                        "part": 1,
+                        "state": 6
+                    },
+                    {
+                        "part": 2,
+                        "state": 0
+                    },
+                    {
+                        "part": 2,
+                        "state": 1
+                    },
+                    {
+                        "part": 2,
+                        "state": 2
+                    },
+                    {
+                        "part": 2,
+                        "state": 3
+                    },
+                    {
+                        "part": 2,
+                        "state": 4
+                    },
+                    {
+                        "part": 2,
+                        "state": 5
+                    },
+                    {
+                        "part": 2,
+                        "state": 6
+                    },
+                    {
+                        "part": 3,
+                        "state": 0
+                    },
+                    {
+                        "part": 3,
+                        "state": 1
+                    },
+                    {
+                        "part": 3,
+                        "state": 2
+                    },
+                    {
+                        "part": 3,
+                        "state": 3
+                    },
+                    {
+                        "part": 3,
+                        "state": 4
+                    },
+                    {
+                        "part": 3,
+                        "state": 5
+                    },
+                    {
+                        "part": 3,
+                        "state": 6
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 4,
+                        "state": 0
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 4,
+                        "state": 1
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 4,
+                        "state": 2
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 4,
+                        "state": 3
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 4,
+                        "state": 4
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 4,
+                        "state": 5
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 4,
+                        "state": 6
+                    }
+                ],
+                "text": "LOCAL I/O CONFIGURATION",
+                "text align": "Center",
+                "widget": "Text area"
+            },
+            {
+                "checkable": false,
+                "class": "lv_btn",
+                "click": true,
+                "drag": false,
+                "fit": "None",
+                "geometry": {
+                    "height": 46,
+                    "width": 62,
+                    "x": 253,
+                    "y": 8
+                },
+                "hidden": false,
+                "layout": "Center",
+                "locked": false,
+                "name": "button_15",
+                "set event": [
+                ],
+                "state": "Released",
+                "style": "Custome Style",
+                "styles": [
+                    {
+                        "Mix": {
+                            "radius": 10
+                        },
+                        "Value": {
+                            "value_font": "123abc 16",
+                            "value_str": "BACK"
+                        },
+                        "part": 0,
+                        "state": 0
+                    },
+                    {
+                        "Mix": {
+                            "radius": 10
+                        },
+                        "Value": {
+                            "value_font": "123abc 16",
+                            "value_str": "BACK"
+                        },
+                        "part": 0,
+                        "state": 1
+                    },
+                    {
+                        "Mix": {
+                            "radius": 10
+                        },
+                        "Value": {
+                            "value_font": "123abc 16",
+                            "value_str": "BACK"
+                        },
+                        "part": 0,
+                        "state": 2
+                    },
+                    {
+                        "Mix": {
+                            "radius": 10
+                        },
+                        "Value": {
+                            "value_font": "123abc 16",
+                            "value_str": "BACK"
+                        },
+                        "part": 0,
+                        "state": 3
+                    },
+                    {
+                        "Mix": {
+                            "radius": 10
+                        },
+                        "Value": {
+                            "value_font": "123abc 16",
+                            "value_str": "BACK"
+                        },
+                        "part": 0,
+                        "state": 4
+                    },
+                    {
+                        "Mix": {
+                            "radius": 10
+                        },
+                        "Value": {
+                            "value_font": "123abc 16",
+                            "value_str": "BACK"
+                        },
+                        "part": 0,
+                        "state": 5
+                    },
+                    {
+                        "Mix": {
+                            "radius": 10
+                        },
+                        "Value": {
+                            "value_font": "123abc 16",
+                            "value_str": "BACK"
+                        },
+                        "part": 0,
+                        "state": 6
+                    }
+                ],
+                "widget": "Button"
+            }
+        ]
+    }
+}

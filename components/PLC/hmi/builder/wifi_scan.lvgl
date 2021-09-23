@@ -1,0 +1,340 @@
+{
+    "fonts": [
+    ],
+    "images": [
+    ],
+    "lvgl": {
+        "name": "page_wifi_scan",
+        "resolution": {
+            "height": 240,
+            "width": 320
+        },
+        "screen color": "#ffffff",
+        "widgets": [
+            {
+                "checkable": false,
+                "class": "lv_btn",
+                "click": true,
+                "drag": false,
+                "fit": "None",
+                "geometry": {
+                    "height": 35,
+                    "width": 100,
+                    "x": 6,
+                    "y": 197
+                },
+                "hidden": false,
+                "layout": "Center",
+                "locked": false,
+                "name": "button_1",
+                "set event": [
+                ],
+                "state": "Released",
+                "style": "Custome Style",
+                "styles": [
+                    {
+                        "Mix": {
+                            "radius": 10
+                        },
+                        "Value": {
+                            "value_font": "123abc 16",
+                            "value_str": "SCAN"
+                        },
+                        "part": 0,
+                        "state": 0
+                    },
+                    {
+                        "Mix": {
+                            "radius": 10
+                        },
+                        "Value": {
+                            "value_font": "123abc 16",
+                            "value_str": "SCAN"
+                        },
+                        "part": 0,
+                        "state": 1
+                    },
+                    {
+                        "Mix": {
+                            "radius": 10
+                        },
+                        "Value": {
+                            "value_font": "123abc 16",
+                            "value_str": "SCAN"
+                        },
+                        "part": 0,
+                        "state": 2
+                    },
+                    {
+                        "Mix": {
+                            "radius": 10
+                        },
+                        "Value": {
+                            "value_font": "123abc 16",
+                            "value_str": "SCAN"
+                        },
+                        "part": 0,
+                        "state": 3
+                    },
+                    {
+                        "Mix": {
+                            "radius": 10
+                        },
+                        "Value": {
+                            "value_font": "123abc 16",
+                            "value_str": "SCAN"
+                        },
+                        "part": 0,
+                        "state": 4
+                    },
+                    {
+                        "Mix": {
+                            "radius": 10
+                        },
+                        "Value": {
+                            "value_font": "123abc 16",
+                            "value_str": "SCAN"
+                        },
+                        "part": 0,
+                        "state": 5
+                    },
+                    {
+                        "Mix": {
+                            "radius": 10
+                        },
+                        "Value": {
+                            "value_font": "123abc 16",
+                            "value_str": "SCAN"
+                        },
+                        "part": 0,
+                        "state": 6
+                    }
+                ],
+                "widget": "Button"
+            },
+            {
+                "checkable": false,
+                "class": "lv_btn",
+                "click": true,
+                "drag": false,
+                "fit": "None",
+                "geometry": {
+                    "height": 35,
+                    "width": 100,
+                    "x": 217,
+                    "y": 196
+                },
+                "hidden": false,
+                "layout": "Center",
+                "locked": false,
+                "name": "button_2",
+                "set event": [
+                ],
+                "state": "Released",
+                "style": "Custome Style",
+                "styles": [
+                    {
+                        "Mix": {
+                            "radius": 10
+                        },
+                        "Value": {
+                            "value_font": "123abc 16",
+                            "value_str": "BACK"
+                        },
+                        "part": 0,
+                        "state": 0
+                    },
+                    {
+                        "Mix": {
+                            "radius": 10
+                        },
+                        "Value": {
+                            "value_font": "123abc 16",
+                            "value_str": "BACK"
+                        },
+                        "part": 0,
+                        "state": 1
+                    },
+                    {
+                        "Mix": {
+                            "radius": 10
+                        },
+                        "Value": {
+                            "value_font": "123abc 16",
+                            "value_str": "BACK"
+                        },
+                        "part": 0,
+                        "state": 2
+                    },
+                    {
+                        "Mix": {
+                            "radius": 10
+                        },
+                        "Value": {
+                            "value_font": "123abc 16",
+                            "value_str": "BACK"
+                        },
+                        "part": 0,
+                        "state": 3
+                    },
+                    {
+                        "Mix": {
+                            "radius": 10
+                        },
+                        "Value": {
+                            "value_font": "123abc 16",
+                            "value_str": "BACK"
+                        },
+                        "part": 0,
+                        "state": 4
+                    },
+                    {
+                        "Mix": {
+                            "radius": 10
+                        },
+                        "Value": {
+                            "value_font": "123abc 16",
+                            "value_str": "BACK"
+                        },
+                        "part": 0,
+                        "state": 5
+                    },
+                    {
+                        "Mix": {
+                            "radius": 10
+                        },
+                        "Value": {
+                            "value_font": "123abc 16",
+                            "value_str": "BACK"
+                        },
+                        "part": 0,
+                        "state": 6
+                    }
+                ],
+                "widget": "Button"
+            },
+            {
+                "align": "Center",
+                "animation time": 200,
+                "auto fit": false,
+                "class": "lv_roller",
+                "click": true,
+                "drag": false,
+                "geometry": {
+                    "height": 183,
+                    "width": 310,
+                    "x": 6,
+                    "y": 6
+                },
+                "hidden": false,
+                "locked": false,
+                "name": "roller_1",
+                "options": "Option 1\nOption 2\nOption 3\nOption 4\nOption 5",
+                "set event": [
+                ],
+                "styles": [
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 0
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 1
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 2
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 3
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 4
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 5
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 0,
+                        "state": 6
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 3,
+                        "state": 0
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 3,
+                        "state": 1
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 3,
+                        "state": 2
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 3,
+                        "state": 3
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 3,
+                        "state": 4
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 3,
+                        "state": 5
+                    },
+                    {
+                        "Text": {
+                            "text_font": "123abc 16"
+                        },
+                        "part": 3,
+                        "state": 6
+                    }
+                ],
+                "visible rows": 5,
+                "widget": "Roller"
+            }
+        ]
+    }
+}

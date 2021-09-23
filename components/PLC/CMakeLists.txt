@@ -1,0 +1,50 @@
+file(
+    GLOB_RECURSE
+        SOURCES
+            hmi/*.c
+            hmi/fonts/*.c
+            hmi/images/*.c
+            hmi/hmi_utils/*.c
+            hmi/page_configuration
+            hmi/page_firmware/*.c
+            hmi/page_io/*.c
+            hmi/page_ladder/*.c
+            hmi/page_main/*.c
+            hmi/page_program/*.c
+            hmi/page_wifi/*.c
+            hmi/page_wifi_scan/*.c
+            hmi/page_yesno/*.c
+            hmi/page_switches/*.c
+            common/src/*.c
+            disk/src/*.c
+            ladder/src/*.c
+            #wifi/src/*c
+)
+
+idf_component_register(
+    SRCS ${SOURCES}
+    INCLUDE_DIRS
+        hmi
+        hmi/fonts
+        hmi/images
+        hmi/hmi_utils
+        hmi/page_configuration
+        hmi/page_firmware
+        hmi/page_io
+        hmi/page_ladder
+        hmi/page_main
+        hmi/page_program
+        hmi/page_wifi
+        hmi/page_wifi_scan
+        hmi/page_yesno
+        hmi/page_switches
+        common/include
+        disk/include
+        ladder/include
+        #wifi/include
+    REQUIRES
+        fatfs
+        sdmmc
+        lvgl
+        lvgl_esp32_drivers
+)
