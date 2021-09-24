@@ -1,3 +1,30 @@
+/*
+ * Copyright 2021 Emiliano Gonzalez (egonzalez . hiperion @ gmail . com))
+ * * Project Site:  *
+ *
+ * This is based on other projects:
+ *    PLsi (https://github.com/ElPercha/PLsi)
+ *
+ *    please contact their authors for more information.
+ *
+ * This is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 3, or (at your option)
+ * any later version.
+ *
+ * This software is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this software; see the file COPYING.  If not, write to
+ * the Free Software Foundation, Inc., 51 Franklin Street,
+ * Boston, MA 02110-1301, USA.
+ *
+ */
+
+#include "plc_globals.h"
 #include "page_wifi.h"
 #include "hmi.h"
 
@@ -8,6 +35,7 @@
 /**********************
  *  STATIC VARIABLES
  **********************/
+lv_obj_t *parent;
 
 lv_obj_t* button_1_ev_0;
 lv_obj_t* button_2_ev_0;
@@ -34,20 +62,20 @@ static void event_cb(lv_obj_t *obj, lv_event_t event) {
 
                 break;
             case PGWIFI_BUTTON2:
-                lv_scr_load(page_main);
+                hmi_switch_page(parent, PMAIN);
                 break;
 
             case PGWIFI_BUTTON3:
-                lv_scr_load(page_wifi_scan);
+                hmi_switch_page(parent, PWIFISCAN);
                 break;
             case PGWIFI_BUTTON4:
-                lv_scr_load(page_configuration);
+                hmi_switch_page(parent, PCONFIGURATION);
                 break;
             case PGWIFI_TXAREA1:
 
                 break;
             case PGWIFI_TXAREA2:
-
+                hmi_switch_page(parent, PPASSWORD);
                 break;
             case PGWIFI_TXAREA3:
 
@@ -57,7 +85,7 @@ static void event_cb(lv_obj_t *obj, lv_event_t event) {
 }
 
 lv_obj_t* page_wifi_create(){
-	lv_obj_t *parent = lv_obj_create(NULL, NULL);
+	parent = lv_obj_create(NULL, NULL);
 
 	static lv_style_t button_1_s0;
 	lv_style_init(&button_1_s0);
@@ -294,7 +322,7 @@ lv_obj_t* page_wifi_create(){
 	lv_obj_set_drag(text_area_1, false);
 	lv_obj_set_pos(text_area_1, 6, 9);
 	lv_obj_set_size(text_area_1, 228, 45);
-	lv_textarea_set_text(text_area_1, "Text area");
+	lv_textarea_set_text(text_area_1, settings.wifi.ssid);
 	lv_textarea_set_placeholder_text(text_area_1, "");
 	lv_textarea_set_cursor_blink_time(text_area_1, 144);
 	lv_textarea_set_one_line(text_area_1, false);
@@ -342,7 +370,7 @@ lv_obj_t* page_wifi_create(){
 	lv_obj_set_drag(text_area_2, false);
 	lv_obj_set_pos(text_area_2, 6, 57);
 	lv_obj_set_size(text_area_2, 228, 45);
-	lv_textarea_set_text(text_area_2, "Text area");
+	lv_textarea_set_text(text_area_2, settings.wifi.password);
 	lv_textarea_set_placeholder_text(text_area_2, "");
 	lv_textarea_set_cursor_blink_time(text_area_2, 144);
 	lv_textarea_set_one_line(text_area_2, false);
@@ -390,7 +418,7 @@ lv_obj_t* page_wifi_create(){
 	lv_obj_set_drag(text_area_3, false);
 	lv_obj_set_pos(text_area_3, 6, 105);
 	lv_obj_set_size(text_area_3, 228, 131);
-	lv_textarea_set_text(text_area_3, "Text area");
+	lv_textarea_set_text(text_area_3, "STATUS");
 	lv_textarea_set_placeholder_text(text_area_3, "");
 	lv_textarea_set_cursor_blink_time(text_area_3, 144);
 	lv_textarea_set_one_line(text_area_3, false);

@@ -1,9 +1,29 @@
 /*
- * plc_tskHmi.c
+ * Copyright 2021 Emiliano Gonzalez (egonzalez . hiperion @ gmail . com))
+ * * Project Site:  *
  *
- *  Created on: 23 sep. 2021
- *      Author: egonzalez
+ * This is based on other projects:
+ *    PLsi (https://github.com/ElPercha/PLsi)
+ *
+ *    please contact their authors for more information.
+ *
+ * This is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 3, or (at your option)
+ * any later version.
+ *
+ * This software is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this software; see the file COPYING.  If not, write to
+ * the Free Software Foundation, Inc., 51 Franklin Street,
+ * Boston, MA 02110-1301, USA.
+ *
  */
+
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -13,6 +33,7 @@
 #include <freertos/task.h>
 #include <freertos/semphr.h>
 #include <esp_task_wdt.h>
+#include <esp_log.h>
 
 #include "lvgl_helpers.h"
 #include "hmi.h"
@@ -97,7 +118,7 @@ void TaskHmi(void *pvParameter) {
     ESP_ERROR_CHECK(esp_timer_create(&periodic_timer_args, &periodic_timer));
     ESP_ERROR_CHECK(esp_timer_start_periodic(periodic_timer, LV_TICK_PERIOD_MS * 1000));
 
-    /* Create the demo application */
+    ESP_LOGI(TAG, "Start HMI");
     hmi_init();
 
     while (1) {
@@ -106,13 +127,11 @@ void TaskHmi(void *pvParameter) {
 
         /* Try to take the semaphore, call lvgl related function on success */
         if (pdTRUE == xSemaphoreTake(xGuiSemaphore, portMAX_DELAY)) {
-            esp_task_wdt_reset();
             lv_task_handler();
             xSemaphoreGive(xGuiSemaphore);
         }
     }
 
-    /* A task should NEVER return */
     free(buf1);
 #ifndef CONFIG_LV_TFT_DISPLAY_MONOCHROME
     free(buf2);

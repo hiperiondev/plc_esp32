@@ -29,6 +29,8 @@
 #include <freertos/FreeRTOS.h>
 #include <freertos/task.h>
 #include <esp_timer.h>
+#include <nvs.h>
+#include <nvs_flash.h>
 
 #include "plc_globals.h"
 #include "plc_tskHmi.h"
@@ -36,15 +38,16 @@
 #include "app_main.h"
 
 void app_main(void) {
+    nvs_flash_init();
 
     xTaskCreatePinnedToCore(
             TaskHmi,
             "HMI",
-            8192,
+            4096,
             NULL,
-            0,
+            10,
             NULL,
-            1
+            0
     );
 
     xTaskCreatePinnedToCore(
@@ -57,12 +60,13 @@ void app_main(void) {
             0
     );
 
+
     xTaskCreatePinnedToCore(
             TaskLadder,
             "Ladder Logic",
-            80000,  // Networks structure size is 76000 leaving 4K free
+            50000,  // Networks structure size is 76000 leaving 4K free
             NULL,
-            10,
+            0,
             NULL,
             1
     );

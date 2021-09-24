@@ -75,12 +75,10 @@ esp_err_t loadProgram(void) {
         return ESP_OK;
 
     if (!sd_available) {
-        //if (settings.ladder.UserProgram == DEMO_PROGRAM_SLOT) {
         ESP_LOGE(TAG, "SD not available. LOADING DEMO...");
         loadDemoUserProgram(Networks);
         programLoaded = true;
         return ESP_OK;
-        //}
     }
 
     FILE *f;
@@ -98,7 +96,7 @@ esp_err_t loadProgram(void) {
             f = fopen(file_user_program, "r");
             if (f == NULL) {
                 ESP_LOGE(TAG, "Failed to open file for reading");
-                //return;
+                return ESP_FAIL;
             }
             while (fread((uint8_t*) &Networks, sizeof(Networks), 1, f))
                 ;
@@ -117,19 +115,14 @@ esp_err_t loadProgram(void) {
             f = fopen(file_user_program, "w");
             if (f == NULL) {
                 ESP_LOGE(TAG, "Failed to open file for writing");
-                //return;
+                return ESP_FAIL;
             }
             fwrite((uint8_t*) &Networks, sizeof(Networks), 1, f);
             fclose(f);
         }
-
-        //clearMemory();
-        //loadSelectedProgram = 0;
     } else {
-        //if (settings.ladder.UserProgram == DEMO_PROGRAM_SLOT) {
         ESP_LOGE(TAG, "NO PROGRAM!!! LOADING DEMO!!");
         loadDemoUserProgram(Networks);
-        //}
     }
     programLoaded = true;
     return ESP_OK;

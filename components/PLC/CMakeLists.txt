@@ -15,10 +15,11 @@ file(
             hmi/page_wifi_scan/*.c
             hmi/page_yesno/*.c
             hmi/page_switches/*.c
+            hmi/page_password/*.c
             common/src/*.c
             disk/src/*.c
             ladder/src/*.c
-            #wifi/src/*c
+            wifi/src/*c
 )
 
 idf_component_register(
@@ -38,10 +39,11 @@ idf_component_register(
         hmi/page_wifi_scan
         hmi/page_yesno
         hmi/page_switches
+        hmi/page_password
         common/include
         disk/include
         ladder/include
-        #wifi/include
+        wifi/include
     REQUIRES
         fatfs
         sdmmc

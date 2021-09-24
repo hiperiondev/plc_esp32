@@ -24,47 +24,34 @@
  *
  */
 
-#ifndef HMI_H
-#define HMI_H
+#ifndef PAGE_PASSWORD_H
+#define PAGE_PASSWORD_H
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/**********************
+ *      INCLUDES
+ **********************/
 
 #include "lvgl.h"
 
+/**********************
+ *       WIDGETS
+ **********************/
 
-#define PG_EVENT(id, name)  static uint8_t ud_##name = id; \
-                            name->user_data = &ud_##name; \
-                            lv_obj_set_event_cb(name, event_cb);
+extern lv_obj_t* keyboard_1_ev_0;
+extern lv_obj_t* text_area_1_ev_0;
 
-enum pages {
-    PMAIN,
-    PCONFIGURATION,
-    PWIFI,
-    PWIFISCAN,
-    PIO,
-    PFIRMWARE,
-    PLADDER,
-    PPROGRAM,
-    PYESNO,
-    PSWITCHES,
-    PPASSWORD
-};
+/**********************
+ * GLOBAL PROTOTYPES
+ **********************/
 
-lv_obj_t *page_main;
-lv_obj_t *page_configuration;
-lv_obj_t *page_wifi;
-lv_obj_t *page_wifi_scan;
-lv_obj_t *page_io;
-lv_obj_t *page_firmware;
-lv_obj_t *page_ladder;
-lv_obj_t *page_program;
-lv_obj_t *page_yesno;
-lv_obj_t *page_switches;
-lv_obj_t *page_password;
+lv_obj_t* page_password_create();
 
-char filename[254];
-
-extern lv_font_t lv_font_123abc_16;
-
-void hmi_init();
-void hmi_switch_page(lv_obj_t *self, uint8_t target);
-
+#ifdef __cplusplus
+} /* extern "C" */
 #endif
+
+#endif /*PAGE_PASSWORD_H*/

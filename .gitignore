@@ -54,6 +54,6 @@ dkms.conf
 .cproject
 .project
 .settings/
-sdkconfig
+sdkconfig*
 temp/
 build/

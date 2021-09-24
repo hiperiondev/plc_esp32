@@ -1,3 +1,29 @@
+/*
+ * Copyright 2021 Emiliano Gonzalez (egonzalez . hiperion @ gmail . com))
+ * * Project Site:  *
+ *
+ * This is based on other projects:
+ *    PLsi (https://github.com/ElPercha/PLsi)
+ *
+ *    please contact their authors for more information.
+ *
+ * This is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 3, or (at your option)
+ * any later version.
+ *
+ * This software is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this software; see the file COPYING.  If not, write to
+ * the Free Software Foundation, Inc., 51 Franklin Street,
+ * Boston, MA 02110-1301, USA.
+ *
+ */
+
 #include "page_program.h"
 #include "hmi.h"
 
@@ -8,7 +34,7 @@
 /**********************
  *  STATIC VARIABLES
  **********************/
-
+lv_obj_t *parent;
 
 lv_obj_t* button_5_ev_0;
 lv_obj_t* roller_1_ev_0;
@@ -31,7 +57,7 @@ static void event_cb(lv_obj_t *obj, lv_event_t event) {
                 //lv_textarea_set_text(text_area_1_ev_0, "SELECT PROGRAM");
                 break;
             case PGPRG_BUTTON5:
-                lv_scr_load(page_configuration);
+                hmi_switch_page(parent, PCONFIGURATION);
                 break;
 
             case PGPRG_ROLLER1:
@@ -50,7 +76,7 @@ static void event_cb(lv_obj_t *obj, lv_event_t event) {
 }
 
 lv_obj_t* page_program_create(){
-	lv_obj_t *parent = lv_obj_create(NULL, NULL);
+	parent = lv_obj_create(NULL, NULL);
 
 	static lv_style_t button_5_s0;
 	lv_style_init(&button_5_s0);

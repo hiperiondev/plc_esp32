@@ -152,6 +152,6 @@ void TaskLadder(void *pvParameters) {
         writeOutputsLocal();
         writeOutputsRemote();
 
-        vTaskDelay(pdMS_TO_TICKS(10));
+        vTaskDelay(pdMS_TO_TICKS(1000));
     }
 }

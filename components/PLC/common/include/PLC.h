@@ -44,7 +44,7 @@
 //  - Version 0.00.03 - Analog I/O support
 //--------------------------------------------------------------------------------
 
-#define FIRMWARE  "Version 0.00.03"
+#define FIRMWARE  "Version 0.01.00"
 
 //--------------------------------------------------------------------------------
 // Total Networks. 
@@ -129,12 +129,6 @@ extern const uint8_t configOutputCanBeAnalog[IO_LOCAL_OUT_QTY];
 #define SD_CS                    5
 
 //--------------------------------------------------------------------------------
-// Baud Rate fo Serial console. Mainly for debbuging
-//--------------------------------------------------------------------------------
-
-#define BAUD_RATE                115200
-
-//--------------------------------------------------------------------------------
 // Default file names and paths
 //--------------------------------------------------------------------------------
 
@@ -142,14 +136,6 @@ extern const uint8_t configOutputCanBeAnalog[IO_LOCAL_OUT_QTY];
 #define MAX_PROGRAMS             4
 
 extern const char *FILENAME_USER_PROGRAMS[];
-
-//--------------------------------------------------------------------------------
-// Default WiFi credentials
-//--------------------------------------------------------------------------------
-
-#define WIFI_SSID                "Your_SSID"
-#define WIFI_PASS                "Your_Password"
-#define WIFI_HOSTNAME            "PLC"
 
 //--------------------------------------------------------------------------------
 // SD SPI pins
