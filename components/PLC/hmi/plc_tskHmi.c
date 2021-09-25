@@ -61,25 +61,12 @@ void TaskHmi(void *pvParameter) {
     assert(buf1 != NULL);
 
     /* Use double buffered when not working with monochrome displays */
-#ifndef CONFIG_LV_TFT_DISPLAY_MONOCHROME
     lv_color_t *buf2 = heap_caps_malloc(DISP_BUF_SIZE * sizeof(lv_color_t), MALLOC_CAP_DMA);
     assert(buf2 != NULL);
-#else
-    static lv_color_t *buf2 = NULL;
-#endif
 
     static lv_disp_buf_t disp_buf;
 
     uint32_t size_in_px = DISP_BUF_SIZE;
-
-#if defined CONFIG_LV_TFT_DISPLAY_CONTROLLER_IL3820         \
-    || defined CONFIG_LV_TFT_DISPLAY_CONTROLLER_JD79653A    \
-    || defined CONFIG_LV_TFT_DISPLAY_CONTROLLER_UC8151D     \
-    || defined CONFIG_LV_TFT_DISPLAY_CONTROLLER_SSD1306
-
-    /* Actual size in pixels, not bytes. */
-    size_in_px *= 8;
-#endif
 
     /* Initialize the working buffer depending on the selected display.
      * NOTE: buf2 == NULL when using monochrome displays. */
@@ -88,14 +75,6 @@ void TaskHmi(void *pvParameter) {
     lv_disp_drv_t disp_drv;
     lv_disp_drv_init(&disp_drv);
     disp_drv.flush_cb = disp_driver_flush;
-
-    /* When using a monochrome display we need to register the callbacks:
-     * - rounder_cb
-     * - set_px_cb */
-#ifdef CONFIG_LV_TFT_DISPLAY_MONOCHROME
-    disp_drv.rounder_cb = disp_driver_rounder;
-    disp_drv.set_px_cb = disp_driver_set_px;
-#endif
 
     disp_drv.buffer = &disp_buf;
     lv_disp_drv_register(&disp_drv);
@@ -124,7 +103,6 @@ void TaskHmi(void *pvParameter) {
     while (1) {
         /* Delay 1 tick (assumes FreeRTOS tick is 10ms */
         vTaskDelay(pdMS_TO_TICKS(10));
-
         /* Try to take the semaphore, call lvgl related function on success */
         if (pdTRUE == xSemaphoreTake(xGuiSemaphore, portMAX_DELAY)) {
             lv_task_handler();

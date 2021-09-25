@@ -24,10 +24,15 @@
  *
  */
 
+#include <stdio.h>
+
+#include <esp_log.h>
+
 #include "plc_globals.h"
 #include "page_password.h"
 #include "hmi.h"
 
+static const char *TAG = "page_password";
 /**********************
  *       WIDGETS
  **********************/
@@ -37,32 +42,29 @@
  **********************/
 lv_obj_t *parent;
 
+lv_group_t*  g;
 lv_obj_t* keyboard_1_ev_0;
 lv_obj_t* text_area_1_ev_0;
 
-enum e_pPassword {
-    PGPASS_KBD1,
-    PGPASS_TXAREA1
-};
+static void kb_event_cb(lv_obj_t *obj, lv_event_t event) {
+    ESP_LOGI(TAG, "keyboard event: %d", event);
+    lv_keyboard_def_event_cb(obj, event);
 
-static void event_cb(lv_obj_t *obj, lv_event_t event) {
-    uint8_t id = *((uint8_t*) obj->user_data);
-    if (event == LV_EVENT_CLICKED) {
-        switch (id) {
-            case PGPASS_TXAREA1:
-                strcpy(settings.wifi.password, lv_textarea_get_text(obj));
-                hmi_switch_page(parent, PWIFI);
-                break;
-            case PGPASS_KBD1:
-                break;
-        }
+    if (event == LV_EVENT_APPLY) {
+        //const char *password = lv_textarea_get_text(text_area_1_ev_0);
+        //ESP_LOGI(TAG, "lv_textarea_get_text: %s", password);
+        sprintf(settings.wifi.password, "%s", lv_textarea_get_text(text_area_1_ev_0));
+        hmi_switch_page(parent, PWIFI);
+    } else if (event == LV_EVENT_CANCEL) {
+        hmi_switch_page(parent, PWIFI);
     }
 }
 
 lv_obj_t* page_password_create(){
-	parent = lv_obj_create(NULL, NULL);
+    g = lv_group_create();
+    parent = lv_obj_create(NULL, NULL);
 
-	static lv_style_t text_area_1_s0;
+    static lv_style_t text_area_1_s0;
 	lv_style_init(&text_area_1_s0);
 	lv_style_set_text_font(&text_area_1_s0,LV_STATE_DEFAULT,&lv_font_123abc_16);
 	lv_style_set_text_font(&text_area_1_s0,LV_STATE_CHECKED,&lv_font_123abc_16);
@@ -97,6 +99,7 @@ lv_obj_t* page_password_create(){
 	lv_obj_set_drag(text_area_1, false);
 	lv_obj_set_pos(text_area_1, 3, 5);
 	lv_obj_set_size(text_area_1, 311, 35);
+
 	lv_textarea_set_text(text_area_1, "");
 	lv_textarea_set_placeholder_text(text_area_1, "");
 	lv_textarea_set_cursor_blink_time(text_area_1, 400);
@@ -105,7 +108,7 @@ lv_obj_t* page_password_create(){
 	lv_textarea_set_max_length(text_area_1, PASS_LENGTH);
 	lv_textarea_set_scroll_propagation(text_area_1, false);
 	lv_textarea_set_edge_flash(text_area_1, false);
-	PG_EVENT(PGPASS_TXAREA1, text_area_1);
+
 	text_area_1_ev_0 = text_area_1;
 
     static lv_style_t keyboard_1_s0;
@@ -120,12 +123,15 @@ lv_obj_t* page_password_create(){
     lv_obj_set_drag(keyboard_1, false);
     lv_obj_set_pos(keyboard_1, 0, 46);
     lv_obj_set_size(keyboard_1, 320, 194);
-    //lv_keyboard_set_mode(keyboard_1, LV_KB_MODE_TEXT);
     lv_keyboard_set_cursor_manage(keyboard_1, true);
     lv_keyboard_set_textarea(keyboard_1, text_area_1);
+    lv_obj_set_event_cb(keyboard_1, kb_event_cb);
 
-    PG_EVENT(PGPASS_KBD1, keyboard_1);
     keyboard_1_ev_0 = keyboard_1;
+
+    lv_group_add_obj(g, keyboard_1);
+    lv_group_focus_obj(keyboard_1);
+    lv_group_set_editing(g, true);
 
 	return parent;
 }
