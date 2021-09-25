@@ -75,7 +75,7 @@ static void event_handler(void *arg, esp_event_base_t event_base, int32_t event_
     }
 }
 
-esp_err_t wifi_init_sta(uint8_t ssid[32], uint8_t password[64]) {
+esp_err_t plc_wifi_connect(uint8_t ssid[32], uint8_t password[64]) {
     s_wifi_event_group = xEventGroupCreate();
 
     ESP_ERROR_CHECK(esp_netif_init());
@@ -130,4 +130,8 @@ esp_err_t wifi_init_sta(uint8_t ssid[32], uint8_t password[64]) {
         ESP_LOGE(TAG, "UNEXPECTED EVENT");
     }
     return ESP_FAIL;
+}
+
+esp_err_t plc_wifi_disconnect(void) {
+    return ESP_OK;
 }

@@ -25,11 +25,11 @@
  */
 #include <esp_wifi.h>
 #include <esp_log.h>
+#include <plc_wifi.h>
 
 #include "plc_globals.h"
 #include "page_wifi_scan.h"
 #include "hmi.h"
-#include "plc_wifi_plsi.h"
 
 static const char *TAG = "page_wifi_scan";
 /**********************
@@ -100,10 +100,10 @@ static void hmi_wifi_scan(void) {
     if(appStr != NULL)
         free(appStr);
 
-    max_scan = wifi_scan(NULL);
+    max_scan = plc_wifi_scan(NULL);
     ESP_LOGI(TAG, "max_scan: %d", max_scan);
     ap_info = calloc(max_scan, sizeof(wifi_ap_record_t));
-    max_scan = wifi_scan(ap_info);
+    max_scan = plc_wifi_scan(ap_info);
     appStr = malloc(71 * max_scan * sizeof(char));
 
     appStr[0] = '\0';

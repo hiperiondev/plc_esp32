@@ -37,7 +37,7 @@
 
 static const char *TAG = "plc_wifiScan";
 
-uint8_t wifi_scan(wifi_ap_record_t *ap_info) {
+esp_err_t plc_wifi_scan(wifi_ap_record_t *ap_info) {
     if (ap_info == NULL) {
         return DEFAULT_SCAN_LIST_SIZE;
     };

@@ -29,20 +29,8 @@
 
 #include <esp_wifi.h>
 
-//--------------------------------------------------------------------------------
-// Globals variables for WiFi task
-//--------------------------------------------------------------------------------
-
-extern uint16_t configFirmwareEnabled;
-extern uint16_t configFirmwareSequence;
-extern uint16_t configFirmwareMemory;
-
-//--------------------------------------------------------------------------------
-// Wifi task main functions
-//--------------------------------------------------------------------------------
-
-void wifiWaitSettings(void);
-void wifi_init_sta(uint8_t ssid[32], uint8_t password[64]);
-uint8_t wifi_scan(wifi_ap_record_t *ap_info);
+     void plc_wifi_connect(uint8_t ssid[32], uint8_t password[64]);
+esp_err_t plc_wifi_disconnect(void);
+esp_err_t plc_wifi_scan(wifi_ap_record_t *ap_info);
 
 #endif

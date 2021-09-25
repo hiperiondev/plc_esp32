@@ -24,6 +24,7 @@
  *
  */
 
+#include "plc_wifi.h"
 #include "plc_globals.h"
 #include "page_wifi.h"
 #include "hmi.h"
